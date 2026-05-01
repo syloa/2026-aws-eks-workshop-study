@@ -601,7 +601,7 @@ terraform apply -target="module.vpc" -auto-approve
 # eks 등 배포 : 14분 소요
 terraform apply -auto-approve
 ```
-![alt text](../../../images/aews-week01-eks-private.png)
+![alt text](./images/aews-week01-eks-private.png)
 
 API server endpoint access 옵션이 Private인 클러스터가 생성됩니다.
 
