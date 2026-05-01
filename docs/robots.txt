@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://syloa.github.io/2026-aws-eks-workshop-study/sitemap
+Sitemap: https://syloa.github.io/2026-aws-eks-workshop-study/sitemap.xml
+
+Sitemap: https://syloa.github.io/sitemap
+Sitemap: https://syloa.github.io/sitemap.xml

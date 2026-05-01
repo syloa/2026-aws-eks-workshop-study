@@ -1,0 +1,136 @@
+site_name: Domingo Doodles - AWS EKS Workshop Study
+site_description: Scribbling about Cloud, Infra, and everything in between
+site_author: Siyoung Lee
+site_url: https://syloa.github.io/2026-aws-eks-workshop-study/
+use_directory_urls: true
+repo_url: https://github.com/syloa/2026-aws-eks-workshop-study
+repo_name: syloa/2026-aws-eks-workshop-study
+
+
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - toc.follow # Side TOC
+    # - toc.integrate
+    - navigation.top
+    - touch
+    - content.tabs.link
+    - i18n
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: dark)"
+      primary: black
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드로 전환
+    - scheme: slate
+      media: "(prefers-color-scheme: light)"
+      primary: black
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드로 전환
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+plugins:
+  - i18n:
+      # default_locale: en
+      # reconfigure_sitemap: true
+      languages:
+        - locale: en
+          name: English
+          build: true
+          default: true
+          # fallback_to: ko
+        - locale: ko
+          name: 한국어
+          build: true
+          # fallback_to: en
+  # - sitemap:
+  #     filename: sitemap.xml
+  - search:
+      lang: [en, ko]
+  # - git-revision-date-localized:
+      # type: date
+      # enable_creation_date: true
+      # fallback_to_build_date: false
+      # enable_git_follow: false
+      # enabled: true
+      # strict: false
+  - glightbox
+  # - minify:
+  #     minify_html: true
+  #     minify_css: true
+  #     minify_js: true   
+  - tags:
+      tags_file: tags.md
+  - mermaid2
+  - enumerate-headings:
+      toc_depth: 6
+      increment_across_pages: false
+      start_level: 2
+      exclude:
+        - index.md
+        - tags.md
+  # - awesome-pages
+      
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: 한국어
+      link: /ko/
+      lang: ko
+  generator: false
+  meta:
+    google-site-verification: "google-site-verification=9enAp2_KQ_J2TbYSbYhtTF7RUfFLFytvhnAM0TeX8sg"
+  analytics:
+    provider: google
+    property: G-RTV54E0RW7
+
+extra_css:
+  # - stylesheets/extra.css
+  - stylesheets/custom.css
+  
+nav:
+  - Home: https://syloa.github.io/
+  - Week 1:
+    - EKS 소개 및 배포: kubernetes/eks/aews/aews-week01.md
+  - Week 2:
+    - EKS Networking: kubernetes/eks/aews/aews-week02-01.md
+    - EKS Networking Hands-on: kubernetes/eks/aews/aews-week02-02.md
+  - Week 3:
+    - EKS Pod Scaling: kubernetes/eks/aews/aews-week03-01.md
+    - EKS Node Scaling: kubernetes/eks/aews/aews-week03-02.md
+    - EKS Monitoring: kubernetes/eks/aews/aews-week03-03.md
+  - Week 4:
+    - EKS AuthN/AuthZ: kubernetes/eks/aews/aews-week04-01.md
+  - Week 5:
+    - EKS Troubleshooting: kubernetes/eks/aews/aews-week05-01.md
+  - Week 6:
+    - CI/CD with Amazon EKS Hands-on: kubernetes/eks/aews/aews-week06-01.md
+  # - Week 7:
+    # - EKS Upgrade: kubernetes/eks/aews/aews-week07-01.md
