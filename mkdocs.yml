@@ -136,3 +136,6 @@ nav:
   - Week 7:
     - EKS Upgrade: kubernetes/eks/aews/aews-week07-01.md
     - In-place Upgrdae Hands-on: kubernetes/eks/aews/aews-week07-02.md
+  - Week 9:
+    - EKS Auto Mode: kubernetes/eks/aews/aews-week09-01.md
+    - Operating EKS with AWS Q CLI: kubernetes/eks/aews/aews-week09-02.md
